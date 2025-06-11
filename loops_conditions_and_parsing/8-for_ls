@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# This scrtipt will display file names
+for file in ./*; do
+	name=$(basename "$file" | cut -d'-' -f2-)
+	echo "$name"
+done

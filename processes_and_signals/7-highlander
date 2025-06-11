@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#This script will run infinitely and respond to SIGTERM
+trap 'echo "I am invincible!!!"' SIGTERM
+while true; do
+	echo "To infinity and beyond"
+done
